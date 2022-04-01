@@ -34,6 +34,7 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
+  cursor: pointer;
 }
 
 .main {
@@ -103,4 +104,23 @@ body {
 .action:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+.delivery_status {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  transform: translateX(2%);
+}
+
+.delivery_status .dot {
+  width: 8px;
+  height: 8px;
+  margin-right: 20px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+}
+
+.delivery_status .dot:nth-of-type(2) {
+  background-color: #67bd99;
 }
