@@ -26,7 +26,8 @@ body {
 .panel {
   background-color: #fff;
   width: 80%;
-  width: 360px;
+  max-width: 400px;
+  min-width: 360px;
   height: 680px;
   margin: auto;
   margin-top: 150px;
@@ -144,10 +145,14 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
+  .panel {
+    width: 400px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
   .panel:nth-of-type(1) {
     display: block;
-    width: 420px;
   }
 
   .panel:nth-of-type(1) .delivery_status .dot:nth-of-type(1) {
@@ -161,6 +166,10 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .panel {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .panel:nth-of-type(3),
   .panel:nth-of-type(1) {
     display: block;
